@@ -7,7 +7,7 @@
 You need to configure and specify the URI of your Broker in **_Initiator.java_,  line 11**. Consider [HiveMQ.](https://www.hivemq.com/try-out/)
 ```
 $ git clone https://github.com/Nathi360/Hello-MQTT.git
-$ cd Hello-MQTT/src/main/java
+$ cd Hello-MQTT-master/src/main/java
 $ make clean && make
 $ make run
 ```

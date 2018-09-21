@@ -8,6 +8,6 @@ You need to configure and specify the URI of your Broker in **_Initiator.java_, 
 ```
 $ git clone https://github.com/Nathi360/Hello-MQTT.git
 $ cd Hello-MQTT/src/main/java
-$ make clean
+$ make clean && make
 $ make run
 ```

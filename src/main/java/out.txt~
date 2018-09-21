@@ -1,0 +1,106 @@
+java -cp .:\* Initiator
+Client-1 connected to Broker!
+Client-2 connected to Broker!
+Client-3 connected to Broker!
+Client-4 connected to Broker!
+Client-5 connected to Broker!
+
+Client-1 unsubscribed to TOPIC/ORANGE
+Client-2 unsubscribed to TOPIC/ORANGE
+Client-3 unsubscribed to TOPIC/ORANGE
+Client-4 unsubscribed to TOPIC/ORANGE
+Client-5 unsubscribed to TOPIC/ORANGE
+Client-1 unsubscribed to TOPIC/TECH
+Client-2 unsubscribed to TOPIC/TECH
+Client-3 unsubscribed to TOPIC/TECH
+Client-4 unsubscribed to TOPIC/TECH
+Client-5 unsubscribed to TOPIC/TECH
+Client-1 unsubscribed to TOPIC/SPORTS
+Client-2 unsubscribed to TOPIC/SPORTS
+Client-3 unsubscribed to TOPIC/SPORTS
+Client-4 unsubscribed to TOPIC/SPORTS
+Client-5 unsubscribed to TOPIC/SPORTS
+Client-1 unsubscribed to TOPIC/TRAVEL
+Client-2 unsubscribed to TOPIC/TRAVEL
+Client-3 unsubscribed to TOPIC/TRAVEL
+Client-4 unsubscribed to TOPIC/TRAVEL
+Client-5 unsubscribed to TOPIC/TRAVEL
+Client-1 unsubscribed to TOPIC/REGO
+Client-2 unsubscribed to TOPIC/REGO
+Client-3 unsubscribed to TOPIC/REGO
+Client-4 unsubscribed to TOPIC/REGO
+Client-5 unsubscribed to TOPIC/REGO
+
+Client-1 subscribed to TOPIC/ORANGE @ QoS = 0
+Client-1 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-2 subscribed to TOPIC/ORANGE @ QoS = 0
+Client-2 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-3 subscribed to TOPIC/ORANGE @ QoS = 0
+Client-3 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-4 subscribed to TOPIC/ORANGE @ QoS = 0
+Client-4 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-5 subscribed to TOPIC/ORANGE @ QoS = 0
+Client-5 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-1 subscribed to TOPIC/TECH @ QoS = 0
+Client-1 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TECH
+Client-2 subscribed to TOPIC/TECH @ QoS = 0
+Client-2 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TECH
+Client-3 subscribed to TOPIC/TECH @ QoS = 0
+Client-3 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TECH
+Client-4 subscribed to TOPIC/TECH @ QoS = 0
+Client-4 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TECH
+Client-5 subscribed to TOPIC/TECH @ QoS = 0
+Client-5 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TECH
+Client-1 subscribed to TOPIC/SPORTS @ QoS = 0
+Client-2 subscribed to TOPIC/SPORTS @ QoS = 0
+Client-3 subscribed to TOPIC/SPORTS @ QoS = 0
+Client-4 subscribed to TOPIC/SPORTS @ QoS = 0
+Client-5 subscribed to TOPIC/SPORTS @ QoS = 0
+Client-1 subscribed to TOPIC/TRAVEL @ QoS = 0
+Client-1 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TRAVEL
+Client-2 subscribed to TOPIC/TRAVEL @ QoS = 0
+Client-2 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TRAVEL
+Client-3 subscribed to TOPIC/TRAVEL @ QoS = 0
+Client-3 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TRAVEL
+Client-4 subscribed to TOPIC/TRAVEL @ QoS = 0
+Client-4 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TRAVEL
+Client-5 subscribed to TOPIC/TRAVEL @ QoS = 0
+Client-5 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/TRAVEL
+Client-1 subscribed to TOPIC/REGO @ QoS = 0
+Client-1 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/REGO
+Client-2 subscribed to TOPIC/REGO @ QoS = 0
+Client-2 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/REGO
+Client-3 subscribed to TOPIC/REGO @ QoS = 0
+Client-3 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/REGO
+Client-4 subscribed to TOPIC/REGO @ QoS = 0
+Client-4 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/REGO
+Client-5 subscribed to TOPIC/REGO @ QoS = 0
+
+Client-3 publishing: 'THIS IS CLIENT-3' to TOPIC/SPORTS
+Delivery Report: 'THIS IS CLIENT-3' [Sender : Client-3]
+Client-5 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/REGO
+Client-4 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/SPORTS
+Client-3 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/SPORTS
+Client-1 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/SPORTS
+Client-2 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/SPORTS
+Client-5 received message: 'THIS IS CLIENT-3' : TOPIC = TOPIC/SPORTS
+Delivery Report: 'THIS IS CLIENT-5' [Sender : Client-5]
+Client-5 publishing: 'THIS IS CLIENT-5' to TOPIC/TECH
+Client-2 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/TECH
+Client-5 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/TECH
+Client-4 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/TECH
+Client-3 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/TECH
+Client-1 received message: 'THIS IS CLIENT-5' : TOPIC = TOPIC/TECH
+Delivery Report: 'THIS IS CLIENT-1' [Sender : Client-1]
+Client-1 publishing: 'THIS IS CLIENT-1' to TOPIC/ORANGE
+Client-3 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-5 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-1 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-2 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+Client-4 received message: 'THIS IS CLIENT-1' : TOPIC = TOPIC/ORANGE
+
+Client-5 detached from Broker!
+Client-2 detached from Broker!
+Client-1 detached from Broker!
+Client-3 detached from Broker!
+Client-4 detached from Broker!

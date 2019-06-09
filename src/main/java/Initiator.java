@@ -1,9 +1,9 @@
 import Client.TestClient;
 
 import org.eclipse.paho.client.mqttv3.MqttException;
-import org.eclipse.paho.client.mqttv3.MqttPersistenceException;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Initiator {
@@ -21,12 +21,13 @@ public class Initiator {
 
        try{
 
-           topics = new ArrayList<>();
-           topics.add("topic/orange");
-           topics.add("topic/tech");
-           topics.add("topic/sports");
-           topics.add("topic/travel");
-           topics.add("topic/apache");
+           topics = new ArrayList<>(
+                   Arrays.asList("topic/orange",
+                                 "topic/tech",
+                                 "topic/sports",
+                                 "topic/travel",
+                                 "topic/apache")
+           );
 
            client1 = new TestClient(Initiator.BROKER, "Client-1", "THIS IS CLIENT-1");
            client2 = new TestClient(Initiator.BROKER, "Client-2", "THIS IS CLIENT-2");
@@ -67,17 +68,8 @@ public class Initiator {
            client1.publish("topic/tech", client1.getMessage().getPayload(), 0, false);
 
        }
-       catch(MqttPersistenceException exp){
-
-           System.out.println(exp.getMessage());
-       }
-       catch(MqttException exp){
-
-           System.out.println(exp.getMessage());
-       }
-       catch(InterruptedException exp){
-
-           System.out.println(exp.getMessage());
+       catch(MqttException | InterruptedException exp){
+           throw new RuntimeException(exp);
        }
        finally {
 
@@ -92,8 +84,7 @@ public class Initiator {
                client4.disconnect();
            }
            catch (MqttException e){
-
-               System.out.println(e.getMessage());
+               throw new RuntimeException(e);
            }
        }
     }
